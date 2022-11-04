@@ -49,6 +49,9 @@ app.post("/login", async (req, res) => {
   });
 });
 
+app.get("/deploy",(req,res)=>{
+res.send("Welcome to deploy page")
+})
 
 const middleware = (req,res,next)=>{
 if(!req.headers.authorization){
